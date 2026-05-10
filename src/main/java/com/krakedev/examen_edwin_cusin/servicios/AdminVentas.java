@@ -15,6 +15,8 @@ public class AdminVentas {
 		vendedores.add(vendedor);
 	}
 	
+	
+	
 	//calcularsueldo
 	public Double calcularSueldo(String cedula) {
 
@@ -26,6 +28,8 @@ public class AdminVentas {
 		}
 		return null;
 	}
+	
+	
 	
 	//metodo ver todos los vendedoress
 	public ArrayList<Vendedor> listar(){
