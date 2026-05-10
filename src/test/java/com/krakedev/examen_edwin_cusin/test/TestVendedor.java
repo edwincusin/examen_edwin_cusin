@@ -6,7 +6,7 @@ public class TestVendedor {
 
 	public static void main(String[] args) {
 		
-		Vendedor vendedor=new Vendedor("1753081056");
+		Vendedor vendedor=new Vendedor("1753081056","V");
 		System.out.println(vendedor.toString());
 	}
 

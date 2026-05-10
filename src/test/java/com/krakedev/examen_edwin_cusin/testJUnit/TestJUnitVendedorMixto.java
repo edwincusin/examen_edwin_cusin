@@ -31,7 +31,7 @@ public class TestJUnitVendedorMixto {
 	@Test
 	public void testCalcularSueldoCorrecto() {
 
-		VendedorMixto vendedor = new VendedorMixto("1728394050");
+		VendedorMixto vendedor = new VendedorMixto("1728394050","V");
 
 		vendedor.setSueldoFijo(1000);
 		vendedor.setNumeroVentas(5);
@@ -51,7 +51,7 @@ public class TestJUnitVendedorMixto {
 	@Test
 	public void testCalcularSueldoIncorrecto() {
 
-		VendedorMixto vendedor = new VendedorMixto("0102030405");
+		VendedorMixto vendedor = new VendedorMixto("0102030405","V");
 
 		vendedor.setSueldoFijo(800);
 		vendedor.setNumeroVentas(2);

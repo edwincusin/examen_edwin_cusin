@@ -17,17 +17,17 @@ public class TestAdmin {
 			AdminVentas av = new AdminVentas();
 			//Crear un Vendedor, un VendedorComision y un VendedorMixto 
 			//Setear los datos necesarios para calcular los sueldos 
-			Vendedor vendedor = new Vendedor(null);               //<------------- aqui provoco el nullpinterexception
+			Vendedor vendedor = new Vendedor("1753081056","V");               //<------------- aqui provoco el nullpinterexception
 			vendedor.setComisionPorVenta(5.2);
 			vendedor.setNumeroVentas(20);
 			vendedor.setSueldoFijo(450);
 
-			VendedorComision vendedorComision = new VendedorComision("10053081056");
+			VendedorComision vendedorComision = new VendedorComision("10053081056","C");
 			vendedorComision.setComisionPorVenta(2);
 			vendedorComision.setNumeroVentas(40);
 			vendedorComision.setSueldoFijo(450);
 
-			VendedorMixto vendedorMixto = new VendedorMixto("0012345678");
+			VendedorMixto vendedorMixto = new VendedorMixto("0012345678","M");
 			vendedorMixto.setComisionPorVenta(1);
 			vendedorMixto.setNumeroVentas(50);
 			vendedorMixto.setSueldoFijo(450);

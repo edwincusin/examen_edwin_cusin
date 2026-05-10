@@ -5,11 +5,14 @@ public class Vendedor {
 	private int numeroVentas;
 	private double sueldoFijo;
 	private double comisionPorVenta;
+	private String tipo;
 	
-	public Vendedor(String cedula) {
+
+	
+	public Vendedor(String cedula, String tipo) {
 		this.cedula = cedula;
+		this.tipo = tipo;
 	}
-	
 	public String getCedula() {
 		return cedula;
 	}

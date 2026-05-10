@@ -24,7 +24,7 @@ public class TestJUnitVendedorComision {
 	@Test
 	public void testCalcularSueldoCorrecto() {
 
-		VendedorComision vendedor = new VendedorComision("1728394050");
+		VendedorComision vendedor = new VendedorComision("1728394050","C");
 
 		vendedor.setComisionPorVenta(25);
 		vendedor.setNumeroVentas(4);
@@ -44,7 +44,7 @@ public class TestJUnitVendedorComision {
 	@Test
 	public void testCalcularSueldoIncorrecto() {
 
-		VendedorComision vendedor = new VendedorComision("0102030405");
+		VendedorComision vendedor = new VendedorComision("0102030405","C");
 
 		vendedor.setComisionPorVenta(10);
 		vendedor.setNumeroVentas(5);

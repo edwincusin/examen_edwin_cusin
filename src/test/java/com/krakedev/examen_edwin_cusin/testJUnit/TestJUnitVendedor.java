@@ -21,7 +21,7 @@ public class TestJUnitVendedor {
 	@Test
 	public void testCalcularSueldoCorrecto() {
 
-		Vendedor vendedor = new Vendedor("1728394050");
+		Vendedor vendedor = new Vendedor("1728394050","V");
 
 		vendedor.setSueldoFijo(850.75);
 
@@ -39,7 +39,7 @@ public class TestJUnitVendedor {
 	@Test
 	public void testCalcularSueldoIncorrecto() {
 
-		Vendedor vendedor = new Vendedor("0102030405");
+		Vendedor vendedor = new Vendedor("0102030405","V");
 
 		vendedor.setSueldoFijo(600);
 
