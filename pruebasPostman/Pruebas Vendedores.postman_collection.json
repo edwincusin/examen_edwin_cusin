@@ -1,0 +1,175 @@
+{
+  "info": {
+    "_postman_id": "eb9b95fd-aa81-4327-9398-867a4c06fb71",
+    "name": "Pruebas Vendedores",
+    "description": "Colección de pruebas para vendedores",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50391873",
+    "_collection_link": "https://go.postman.co/collection/50391873-eb9b95fd-aa81-4327-9398-867a4c06fb71?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Agregar Vendedor Tipo V",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cedula\":\"1753081056\",\n    \"tipo\":\"V\",\n    \"numeroVentas\":20,\n    \"sueldoFijo\":450,\n    \"comisionPorVenta\":5.2\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/vendedores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Vendedor Tipo C",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cedula\":\"10053081056\",\n    \"tipo\":\"C\",\n    \"numeroVentas\":40,\n    \"sueldoFijo\":450,\n    \"comisionPorVenta\":2\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/vendedores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Vendedor Tipo M",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cedula\":\"0012345678\",\n    \"tipo\":\"M\",\n    \"numeroVentas\":50,\n    \"sueldoFijo\":450,\n    \"comisionPorVenta\":1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/vendedores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Vendedores",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vendedores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Calcular Sueldo Vendedor Normal",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vendedores/1753081056",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedores",
+            "1753081056"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Calcular Sueldo Vendedor Comision",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vendedores/10053081056",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedores",
+            "10053081056"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Calcular Sueldo Vendedor Mixto",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vendedores/0012345678",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedores",
+            "0012345678"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
