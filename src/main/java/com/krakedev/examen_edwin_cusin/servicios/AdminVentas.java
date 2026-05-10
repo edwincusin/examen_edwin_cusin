@@ -27,4 +27,9 @@ public class AdminVentas {
 		return null;
 	}
 	
+	//metodo ver todos los vendedoress
+	public ArrayList<Vendedor> listar(){
+		return vendedores;
+	}
+	
 }

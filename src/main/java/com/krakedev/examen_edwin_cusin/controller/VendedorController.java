@@ -1,5 +1,7 @@
 package com.krakedev.examen_edwin_cusin.controller;
 
+import java.util.ArrayList;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -72,4 +74,12 @@ public class VendedorController {
 	public Double calcularSueldo(@PathVariable String cedula) {
 		return adminVentas.calcularSueldo(cedula);
 	}
+	
+	
+	//metodo ver todos los vendedoress
+	@GetMapping
+	public ArrayList<Vendedor> listar(){
+		return adminVentas.listar();
+	}
+	
 }
