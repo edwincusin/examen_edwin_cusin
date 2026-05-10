@@ -5,7 +5,7 @@ public class VendedorComision extends Vendedor{
 	public VendedorComision(String cedula) {
 		super(cedula);
 	}
-
+	//Debe retornar el valor de la comisión por venta multiplicado por el número de ventas.
 	@Override
 	public double calcularSueldo() {
 		
