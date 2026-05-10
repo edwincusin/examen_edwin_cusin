@@ -38,12 +38,19 @@ public class Vendedor {
 		this.comisionPorVenta = comisionPorVenta;
 	}
 	
+	
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+		
 	@Override
 	public String toString() {
 		return "Vendedor [cedula=" + cedula + ", numeroVentas=" + numeroVentas + ", sueldoFijo=" + sueldoFijo
-				+ ", comisionPorVenta=" + comisionPorVenta + "]";
+				+ ", comisionPorVenta=" + comisionPorVenta + ", tipo=" + tipo + "]";
 	}
-	
 	//METODO CALCULAR SUELDO
 	public double calcularSueldo() {
 		return this.sueldoFijo;
